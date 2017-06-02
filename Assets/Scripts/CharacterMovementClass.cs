@@ -37,7 +37,7 @@ public class CharacterMovementClass : MonoBehaviour {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(movement_direction.x, 0f, movement_direction.z), Vector3.up), turn_speed * Time.deltaTime);
 
         Vector3 velocity = movement_direction * move_speed * Time.deltaTime;
-        print(velocity);
+        //print(velocity);
         rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
 
 
