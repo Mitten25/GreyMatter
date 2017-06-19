@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovementClass : MonoBehaviour {
+public class ShadowMovementClass : MonoBehaviour {
 
     //components
     private Rigidbody rb;
@@ -23,15 +23,16 @@ public class CharacterMovementClass : MonoBehaviour {
         //initialize components
         rb = GetComponent<Rigidbody>();
     }
-
-    private void Update()
+	
+	// Update is called once per frame
+	void Update ()
     {
         //jump
         if (Input.GetButtonDown("Jump") && on_ground)
             rb.AddForce(transform.up * jump_speed);
 
         //create movement vector
-            movement_direction = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        movement_direction = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
 
         //rotate character towards movement direction
         if (movement_direction.magnitude != 0)
