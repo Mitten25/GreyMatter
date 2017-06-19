@@ -34,7 +34,7 @@ public class CharacterCommandClass : MonoBehaviour {
         }
         if (Input.GetMouseButtonDown(1) && shadow_active)
         {
-            Destroy(GameObject.Find("BaseCube(Clone)"));
+            Destroy(GameObject.Find("Shadow(Clone)"));
             shadow_active = false;
         }
 
