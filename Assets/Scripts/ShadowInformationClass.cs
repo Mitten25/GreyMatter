@@ -24,6 +24,7 @@ public class ShadowInformationClass : MonoBehaviour {
             CharacterCommandClass.instance.shadow_active = false;
             Destroy(this.gameObject);
             GameObject.Find("ShadowTime").GetComponent<Text>().enabled = false;
+            Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets[0] };
         }
         life_time_text.text = "Shadow Time Remaining : " + life_time;
 	}

@@ -31,10 +31,11 @@ public class CharacterCommandClass : MonoBehaviour {
             print(-10 * (Mathf.Log(Mathf.Abs(Vector3.Distance(this.transform.position, pos)))) + 40);
             shadow.GetComponent<ShadowInformationClass>().life_time = (-8*(Mathf.Log(Mathf.Abs(Vector3.Distance(this.transform.position, pos)))) + 25);
             shadow_active = true;
+            Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { this.transform, shadow.transform };
         }
         if (Input.GetMouseButtonDown(1) && shadow_active)
         {
-            Destroy(GameObject.Find("Shadow(Clone)"));
+            Destroy(GameObject.Find("Shadow1(Clone)"));
             shadow_active = false;
         }
 
