@@ -40,6 +40,9 @@ public class CharacterMovementClass : MonoBehaviour {
         Vector3 velocity = movement_direction * move_speed * Time.deltaTime;
         //print(velocity);
         rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
+
+        //for 2.5 sake
+        this.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
     }
 
     private void OnCollisionEnter(Collision collision)
