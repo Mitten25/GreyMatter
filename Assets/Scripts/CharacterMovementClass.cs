@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterMovementClass : MonoBehaviour {
 
+    public static CharacterMovementClass instance;
+
     //components
     private Rigidbody rb;
 
@@ -20,6 +22,12 @@ public class CharacterMovementClass : MonoBehaviour {
 
     private void Awake()
     {
+        //initialize singleton behavior
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
         //initialize components
         rb = GetComponent<Rigidbody>();
     }
