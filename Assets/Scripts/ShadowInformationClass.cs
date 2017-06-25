@@ -5,11 +5,23 @@ using UnityEngine.UI;
 
 public class ShadowInformationClass : MonoBehaviour {
 
+    public static ShadowInformationClass instance;
+
     public float life_time;
     public Text life_time_text;
 
-	// Use this for initialization
-	void Start ()
+
+    private void Awake()
+    {
+        //initialize singleton behavior
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
+
+    // Use this for initialization
+    void Start ()
     {
         GameObject.Find("ShadowTime").GetComponent<Text>().enabled = true;
         life_time_text = GameObject.Find("ShadowTime").GetComponent<Text>();

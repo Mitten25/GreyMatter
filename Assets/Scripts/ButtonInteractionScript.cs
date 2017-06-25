@@ -88,6 +88,8 @@ public class ButtonInteractionScript : MonoBehaviour
     {
         CharacterMovementClass.instance.enabled = true;
         CharacterCommandClass.instance.enabled = true;
+        if (CharacterCommandClass.instance.shadow_active)
+            ShadowInformationClass.instance.enabled = true;
     }
 
     private void DeactivateCharacter()
@@ -95,6 +97,8 @@ public class ButtonInteractionScript : MonoBehaviour
         CharacterMovementClass.instance.enabled = false;
         CharacterMovementClass.instance.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         CharacterCommandClass.instance.enabled = false;
+        if (CharacterCommandClass.instance.shadow_active)
+            ShadowInformationClass.instance.enabled = false;
     }
 
 
