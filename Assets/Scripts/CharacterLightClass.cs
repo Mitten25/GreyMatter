@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterLightClass : MonoBehaviour {
+public class CharacterLightClass : MonoBehaviour
+{
+
+    public static CharacterLightClass instance;
 
     public GameObject pointLight;
 
@@ -11,17 +14,28 @@ public class CharacterLightClass : MonoBehaviour {
     public float currentLightLife = 100f;
 
     public bool lightOn;
+    public bool inLight;
 
     private Text lightText;
-	// Use this for initialization
-	void Start ()
+
+    private void Awake()
+    {
+        //initialize singleton behavior
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
+
+    // Use this for initialization
+    void Start()
     {
         lightText = GameObject.Find("LightLife").GetComponent<Text>();
         lightOn = true;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         if (currentLightLife <= 0)
         {
@@ -37,7 +51,7 @@ public class CharacterLightClass : MonoBehaviour {
 
         lightText.text = "Light Remaining: " + currentLightLife;
 
-	}
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -54,6 +68,7 @@ public class CharacterLightClass : MonoBehaviour {
         {
             pointLight.GetComponent<Light>().enabled = true;
             lightOn = true;
+            inLight = false;
         }
     }
 
@@ -63,6 +78,7 @@ public class CharacterLightClass : MonoBehaviour {
         {
             if (currentLightLife < maxLightLife)
                 currentLightLife += .1f;
+            inLight = true;
         }
     }
 }
