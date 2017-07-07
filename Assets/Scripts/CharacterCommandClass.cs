@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class CharacterCommandClass : MonoBehaviour {
 
     public GameObject shadow_fab;
     public bool shadow_active;
+
+    private List<GameObject> cameraPoints = new List<GameObject>();
 
     private void Awake()
     {
@@ -26,12 +29,17 @@ public class CharacterCommandClass : MonoBehaviour {
             Vector3 screenPoint = Input.mousePosition;
             screenPoint.z = 13.0f; //distance of the plane from the camera
             Vector3 pos = Camera.main.ScreenToWorldPoint(screenPoint);
-            GameObject temp = Instantiate(new GameObject(), pos, Quaternion.identity);
+            GameObject temp = new GameObject();
+            temp.transform.position = pos;
+
+            cameraPoints.Add(temp);
 
             Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { this.transform, temp.transform };
         }
         if (Input.GetMouseButtonUp(0) && !shadow_active)
         {
+            foreach (GameObject item in cameraPoints)
+                Destroy(item);
             Vector3 screenPoint = Input.mousePosition;
             screenPoint.z = 13.0f; //distance of the plane from the camera
             Vector3 pos = Camera.main.ScreenToWorldPoint(screenPoint);
@@ -60,10 +68,15 @@ public class CharacterCommandClass : MonoBehaviour {
         //}
         if (Input.GetMouseButtonDown(1) && shadow_active)
         {
-            Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets[0] };
-            Destroy(GameObject.Find("Shadow1(Clone)"));
-            shadow_active = false;
+            KillShadow();
         }
 
+    }
+
+    public void KillShadow()
+    {
+        Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets[0] };
+        Destroy(GameObject.Find("Shadow1(Clone)"));
+        shadow_active = false;
     }
 }

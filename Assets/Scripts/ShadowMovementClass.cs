@@ -50,11 +50,28 @@ public class ShadowMovementClass : MonoBehaviour {
     {
         if (collision.collider.transform.tag == "Ground")
             on_ground = true;
+        if (collision.collider.transform.tag == "Light")
+            Destroy(this);
     }
 
     private void OnCollisionExit(Collision collision)
     {
         if (collision.collider.transform.tag == "Ground")
             on_ground = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Light")
+        {
+            CharacterCommandClass.instance.KillShadow();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.tag == "Light")
+        {
+        }
     }
 }
