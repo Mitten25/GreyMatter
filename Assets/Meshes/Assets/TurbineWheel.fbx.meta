@@ -11,15 +11,25 @@ ModelImporter:
     100006: transform17
     100008: //RootNode
     100010: TurbineWheel
+    100012: TurbineHolder
+    100014: TurbineHolder1
     400000: pCylinder16
     400002: pCylinder8
     400004: transform16
     400006: transform17
     400008: //RootNode
     400010: TurbineWheel
+    400012: TurbineHolder
+    400014: TurbineHolder1
     2300000: TurbineWheel
+    2300002: TurbineHolder
+    2300004: TurbineHolder1
     3300000: TurbineWheel
+    3300002: TurbineHolder
+    3300004: TurbineHolder1
     4300000: TurbineWheel
+    4300002: TurbineHolder
+    4300004: TurbineHolder1
     9500000: //RootNode
   materials:
     importMaterials: 1
