@@ -69,7 +69,8 @@ public class ButtonInteractionScript : MonoBehaviour
             yield return null;
         }
 
-        actionObject.transform.Find("Light").gameObject.SetActive(true);
+        if (actionObject.tag == "Light")
+            actionObject.transform.Find("Light").gameObject.SetActive(true);
 
         yield return new WaitForSeconds(1.5f);
 
