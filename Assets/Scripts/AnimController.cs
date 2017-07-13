@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class AnimController : MonoBehaviour {
 
-	public Animator anim;
+	private Animator anim;
+    public string animString;
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
+
+		anim = this.transform.parent.gameObject.GetComponent<Animator>();
+        anim.Play(animString);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("1"))
-		{
-			anim.Play ("doorOpen");
-		}
+		//if(Input.GetKeyDown("1"))
+		//{
+		//	anim.Play ("doorOpen");
+		//}
 	}
 }

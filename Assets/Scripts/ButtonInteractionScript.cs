@@ -17,6 +17,8 @@ public class ButtonInteractionScript : MonoBehaviour
 
     private bool interactable;
 
+    public bool togglable;
+
     // Use this for initialization
     void Start()
     {
@@ -40,13 +42,13 @@ public class ButtonInteractionScript : MonoBehaviour
                 }
             }
 
-            else if (inRange && active)
+            else if (inRange && active && togglable)
             {
                 if (Input.GetButtonDown("Interact"))
                 {
                     active = false;
                     ChangeButtonColor("red");
-                    actionObject.transform.Find("Light").gameObject.SetActive(false);
+                    actionObject.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
         }
