@@ -46,7 +46,7 @@ public class CharacterCommandClass : MonoBehaviour {
 
             GameObject shadow = Instantiate(shadow_fab, pos, Quaternion.identity);
             print(-10 * (Mathf.Log(Mathf.Abs(Vector3.Distance(this.transform.position, pos)))) + 40);
-            shadow.GetComponent<ShadowInformationClass>().life_time = (-8 * (Mathf.Log(Mathf.Abs(Vector3.Distance(this.transform.position, pos)))) + 25);
+            shadow.GetComponent<ShadowInformationClass>().life_time = (-8 * (Mathf.Log(Mathf.Abs(Vector3.Distance(this.transform.position, pos)))) + 35);
 
             this.gameObject.GetComponent<CharacterLightClass>().currentLightLife -= shadow.GetComponent<ShadowInformationClass>().life_time;
 
