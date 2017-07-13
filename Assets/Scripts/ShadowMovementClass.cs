@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShadowMovementClass : MonoBehaviour {
 
+    public static ShadowMovementClass instance;
+
     //components
     private Rigidbody rb;
 
@@ -22,6 +24,11 @@ public class ShadowMovementClass : MonoBehaviour {
     {
         //initialize components
         rb = GetComponent<Rigidbody>();
+
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
     }
 	
 	// Update is called once per frame
