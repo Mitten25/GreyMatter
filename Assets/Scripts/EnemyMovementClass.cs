@@ -16,11 +16,14 @@ public class EnemyMovementClass : MonoBehaviour {
 
     public state current_state;
 
+    public Vector3 return_position;
+
     // Use this for initialization
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        return_position = this.transform.position;
 	}
 
     // Update is called once per frame
@@ -64,7 +67,28 @@ public class EnemyMovementClass : MonoBehaviour {
         }
         if (current_state == state.DORMANT)
         {
+            move_speed = stalk_move_speed;
 
+            movement_direction = return_position - this.transform.position;
+            movement_direction = movement_direction.normalized;
+
+            //rotate character towards movement direction
+            if (movement_direction.magnitude != 0)
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(movement_direction.x, 0f, movement_direction.z), Vector3.up), turn_speed * Time.deltaTime);
+
+            Vector3 velocity = movement_direction * move_speed * Time.deltaTime;
+            rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
+
+            //for 2.5 sake
+            this.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            print("dead");
         }
     }
 }
