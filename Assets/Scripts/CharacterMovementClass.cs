@@ -71,7 +71,6 @@ public class CharacterMovementClass : MonoBehaviour {
     {
         if (other.tag == "Death")
         {
-            print("in");
             Death();
         }
     }
@@ -79,5 +78,6 @@ public class CharacterMovementClass : MonoBehaviour {
     void Death()
     {
         Destroy(this.gameObject);
+        CharacterCommandClass.instance.KillShadow();
     }
 }
