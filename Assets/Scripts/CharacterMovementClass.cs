@@ -64,4 +64,18 @@ public class CharacterMovementClass : MonoBehaviour {
         if (collision.collider.transform.tag == "Ground")
             on_ground = false;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Death")
+        {
+            print("in");
+            Death();
+        }
+    }
+
+    void Death()
+    {
+        Destroy(this.gameObject);
+    }
 }

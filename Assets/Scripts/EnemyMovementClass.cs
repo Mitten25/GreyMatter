@@ -83,12 +83,4 @@ public class EnemyMovementClass : MonoBehaviour {
             this.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == "Player")
-        {
-            print("dead");
-        }
-    }
 }
