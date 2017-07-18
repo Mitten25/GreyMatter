@@ -14,6 +14,8 @@ ModelImporter:
     100012: polySurface18_MeshPart1
     100014: //RootNode
     100016: transform3
+    100018: Body
+    100020: Head
     400000: polySurface14
     400002: polySurface15
     400004: polySurface16
@@ -23,24 +25,33 @@ ModelImporter:
     400012: polySurface18_MeshPart1
     400014: //RootNode
     400016: transform3
+    400018: Body
+    400020: Head
     2300000: polySurface14
     2300002: polySurface15
     2300004: polySurface16
     2300006: polySurface17
     2300008: polySurface18_MeshPart0
     2300010: polySurface18_MeshPart1
+    2300012: Body
+    2300014: Head
     3300000: polySurface14
     3300002: polySurface15
     3300004: polySurface16
     3300006: polySurface17
     3300008: polySurface18_MeshPart0
     3300010: polySurface18_MeshPart1
+    3300012: Body
+    3300014: Head
     4300000: polySurface14
     4300002: polySurface15
     4300004: polySurface16
     4300006: polySurface17
     4300008: polySurface18_MeshPart0
     4300010: polySurface18_MeshPart1
+    4300012: Head
+    4300014: Body
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
