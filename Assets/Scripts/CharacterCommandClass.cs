@@ -76,7 +76,7 @@ public class CharacterCommandClass : MonoBehaviour {
     public void KillShadow()
     {
         Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets = new Transform[] { Camera.main.transform.parent.gameObject.GetComponent<CameraControlScript>().m_Targets[0] };
-        Destroy(GameObject.Find("Shadow1(Clone)"));
+        Destroy(GameObject.FindGameObjectWithTag("Shadow"));
         shadow_active = false;
     }
 }
