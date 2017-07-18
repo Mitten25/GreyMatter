@@ -73,6 +73,10 @@ public class ShadowMovementClass : MonoBehaviour {
         {
             CharacterCommandClass.instance.KillShadow();
         }
+        if (other.transform.tag == "Death")
+        {
+            CharacterCommandClass.instance.KillShadow();
+        }
     }
 
     private void OnTriggerExit(Collider other)

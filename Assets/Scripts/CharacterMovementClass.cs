@@ -57,6 +57,8 @@ public class CharacterMovementClass : MonoBehaviour {
     {
         if (collision.collider.transform.tag == "Ground")
             on_ground = true;
+        if (collision.collider.transform.tag == "Enemy")
+            Death();
     }
 
     private void OnCollisionExit(Collision collision)
