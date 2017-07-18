@@ -1,85 +1,29 @@
 fileFormatVersion: 2
-guid: 6f6dcab24d33d40308583a84d11158d3
-timeCreated: 1497995155
+guid: 96eb970dbf48d4b63bf6cb09b6610685
+timeCreated: 1500407809
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Body
-    100002: Cape
-    100004: Head
-    100006: Shadow
-    100008: //RootNode
-    100010: Ball
-    100012: Chain
-    100014: LeftArm
-    100016: LeftForearm
-    100018: LeftHand
-    100020: LeftHumerus
-    100022: Link6
-    100024: Link7
-    100026: Link8
-    100028: RightArm
-    100030: RightForearm
-    100032: RightHand
-    100034: RightHumerus
-    400000: Body
-    400002: Cape
-    400004: Head
-    400006: //RootNode
-    400008: Shadow
-    400010: Ball
-    400012: Chain
-    400014: LeftArm
-    400016: LeftForearm
-    400018: LeftHand
-    400020: LeftHumerus
-    400022: Link6
-    400024: Link7
-    400026: Link8
-    400028: RightArm
-    400030: RightForearm
-    400032: RightHand
-    400034: RightHumerus
-    2300000: Body
-    2300002: Cape
-    2300004: Head
-    2300006: Ball
-    2300008: LeftForearm
-    2300010: LeftHand
-    2300012: LeftHumerus
-    2300014: Link6
-    2300016: Link7
-    2300018: Link8
-    2300020: RightForearm
-    2300022: RightHand
-    2300024: RightHumerus
-    3300000: Body
-    3300002: Cape
-    3300004: Head
-    3300006: Ball
-    3300008: LeftForearm
-    3300010: LeftHand
-    3300012: LeftHumerus
-    3300014: Link6
-    3300016: Link7
-    3300018: Link8
-    3300020: RightForearm
-    3300022: RightHand
-    3300024: RightHumerus
-    4300000: Cape
-    4300002: Body
-    4300004: Head
-    4300006: Ball
-    4300008: Link6
-    4300010: Link7
-    4300012: Link8
-    4300014: LeftHumerus
-    4300016: LeftForearm
-    4300018: LeftHand
-    4300020: RightHumerus
-    4300022: RightForearm
-    4300024: RightHand
+    100000: //RootNode
+    100002: cloak
+    100004: head
+    100006: scarf
+    100008: transform4
+    400000: //RootNode
+    400002: cloak
+    400004: head
+    400006: scarf
+    400008: transform4
+    2300000: cloak
+    2300002: head
+    2300004: scarf
+    3300000: cloak
+    3300002: head
+    3300004: scarf
+    4300000: cloak
+    4300002: scarf
+    4300004: head
     9500000: //RootNode
   materials:
     importMaterials: 1
