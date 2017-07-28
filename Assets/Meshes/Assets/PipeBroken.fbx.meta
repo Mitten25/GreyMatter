@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ef27119b3a44a4af4817f5e3bb2d8ca9
-timeCreated: 1501015833
+guid: d9a90138bd78145e59b8b8e953b64490
+timeCreated: 1501109368
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: WaterWheel
-    4300002: waterWheel
+    4300000: PipeBroken
     9500000: //RootNode
   materials:
     importMaterials: 1

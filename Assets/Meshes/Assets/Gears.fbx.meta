@@ -1,16 +1,32 @@
 fileFormatVersion: 2
-guid: ef27119b3a44a4af4817f5e3bb2d8ca9
-timeCreated: 1501015833
+guid: 1867cdee1201f4f5991bd32a1e656965
+timeCreated: 1501110119
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: WaterWheel
-    4300002: waterWheel
+    100000: Gear1
+    100002: Gear2
+    100004: Gear3
+    100006: Gear4
+    100008: //RootNode
+    400000: Gear1
+    400002: Gear2
+    400004: Gear3
+    400006: Gear4
+    400008: //RootNode
+    2300000: Gear1
+    2300002: Gear2
+    2300004: Gear3
+    2300006: Gear4
+    3300000: Gear1
+    3300002: Gear2
+    3300004: Gear3
+    3300006: Gear4
+    4300000: Gear1
+    4300002: Gear2
+    4300004: Gear3
+    4300006: Gear4
     9500000: //RootNode
   materials:
     importMaterials: 1
