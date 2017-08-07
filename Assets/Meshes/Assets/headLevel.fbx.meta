@@ -32,6 +32,11 @@ ModelImporter:
     100048: transform7
     100050: transform8
     100052: transform9
+    100054: polySurface3 1
+    100056: polySurface1
+    100058: polySurface6
+    100060: polySurface7
+    100062: pTorus1
     400000: Body:polySurface1
     400002: curve1
     400004: curve2
@@ -59,11 +64,38 @@ ModelImporter:
     400048: transform7
     400050: transform8
     400052: transform9
+    400054: polySurface3 1
+    400056: polySurface1
+    400058: polySurface6
+    400060: polySurface7
+    400062: pTorus1
     2300000: curve2
     2300002: //RootNode
+    2300004: polySurface3
+    2300006: polySurface1
+    2300008: polySurface2
+    2300010: polySurface4
+    2300012: polySurface6
+    2300014: polySurface7
+    2300016: pTorus1
     3300000: curve2
     3300002: //RootNode
+    3300004: polySurface3
+    3300006: polySurface1
+    3300008: polySurface2
+    3300010: polySurface4
+    3300012: polySurface6
+    3300014: polySurface7
+    3300016: pTorus1
     4300000: curve2
+    4300002: polySurface3
+    4300004: polySurface1
+    4300006: polySurface2
+    4300008: polySurface4
+    4300010: polySurface7
+    4300012: polySurface6
+    4300014: pTorus1
+    7400000: HeadPump
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -87,7 +119,57 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HeadPump
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 201
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: curve2
+        weight: 1
+      - path: curve2/polySurface1
+        weight: 1
+      - path: curve2/polySurface2
+        weight: 1
+      - path: curve2/polySurface4
+        weight: 1
+      - path: curve2/polySurface7
+        weight: 1
+      - path: pCylinder16
+        weight: 1
+      - path: pCylinder16/polySurface6
+        weight: 1
+      - path: polySurface3
+        weight: 1
+      - path: pTorus1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
