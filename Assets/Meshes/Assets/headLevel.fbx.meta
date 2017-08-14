@@ -37,6 +37,7 @@ ModelImporter:
     100058: polySurface6
     100060: polySurface7
     100062: pTorus1
+    100064: pCube2
     400000: Body:polySurface1
     400002: curve1
     400004: curve2
@@ -69,6 +70,7 @@ ModelImporter:
     400058: polySurface6
     400060: polySurface7
     400062: pTorus1
+    400064: pCube2
     2300000: curve2
     2300002: //RootNode
     2300004: polySurface3
@@ -78,6 +80,7 @@ ModelImporter:
     2300012: polySurface6
     2300014: polySurface7
     2300016: pTorus1
+    2300018: pCube2
     3300000: curve2
     3300002: //RootNode
     3300004: polySurface3
@@ -87,6 +90,7 @@ ModelImporter:
     3300012: polySurface6
     3300014: polySurface7
     3300016: pTorus1
+    3300018: pCube2
     4300000: curve2
     4300002: polySurface3
     4300004: polySurface1
@@ -95,6 +99,7 @@ ModelImporter:
     4300010: polySurface7
     4300012: polySurface6
     4300014: pTorus1
+    4300016: pCube2
     7400000: HeadPump
     9500000: //RootNode
   materials:

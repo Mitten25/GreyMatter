@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: 660e8f164f15946cfa8923b25272a34f
+timeCreated: 1502308161
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cage
+    100002: Candle
+    100004: Candle 1
+    100006: Candle 2
+    100008: Candle 3
+    100010: Candle 4
+    100012: Candle 5
+    100014: CandleLower
+    100016: CandleLower 1
+    100018: CandleLower 2
+    100020: CandleLower 3
+    100022: CandleLower 4
+    100024: CandleLower 5
+    100026: LanternMain
+    100028: LowerTentacle
+    100030: LowerTentacle1
+    100032: LowerTentacle2
+    100034: LowerTentacle3
+    100036: LowerTentacle4
+    100038: LowerTentacle5
+    100040: //RootNode
+    100042: polySurface47
+    100044: Suckers
+    100046: suckers
+    100048: Suckers 1
+    100050: suckers 1
+    100052: Suckers 2
+    100054: suckers 2
+    100056: Suckers 3
+    100058: suckers 3
+    100060: Suckers 4
+    100062: suckers 4
+    100064: Suckers 5
+    100066: suckers 5
+    100068: tentacle
+    100070: tentacle 1
+    100072: tentacle 2
+    100074: tentacle 3
+    100076: tentacle 4
+    100078: tentacle 5
+    100080: Tentaclearm
+    100082: Tentaclearm 1
+    100084: Tentaclearm 2
+    100086: Tentaclearm 3
+    100088: Tentaclearm 4
+    100090: Tentaclearm 5
+    100092: TopChand
+    100094: UpperBall
+    100096: UpperTentacle
+    100098: UpperTentacle1
+    100100: UpperTentacle2
+    100102: UpperTentacle3
+    100104: UpperTentacle4
+    100106: UpperTentacle5
+    100108: UpperTentacle1_Candle_MeshPart0
+    100110: UpperTentacle1_Candle_MeshPart1
+    400000: Cage
+    400002: Candle
+    400004: Candle 1
+    400006: Candle 2
+    400008: Candle 3
+    400010: Candle 4
+    400012: Candle 5
+    400014: CandleLower
+    400016: CandleLower 1
+    400018: CandleLower 2
+    400020: CandleLower 3
+    400022: CandleLower 4
+    400024: CandleLower 5
+    400026: LanternMain
+    400028: LowerTentacle
+    400030: LowerTentacle1
+    400032: LowerTentacle2
+    400034: LowerTentacle3
+    400036: LowerTentacle4
+    400038: LowerTentacle5
+    400040: //RootNode
+    400042: polySurface47
+    400044: Suckers
+    400046: suckers
+    400048: Suckers 1
+    400050: suckers 1
+    400052: Suckers 2
+    400054: suckers 2
+    400056: Suckers 3
+    400058: suckers 3
+    400060: Suckers 4
+    400062: suckers 4
+    400064: Suckers 5
+    400066: suckers 5
+    400068: tentacle
+    400070: tentacle 1
+    400072: tentacle 2
+    400074: tentacle 3
+    400076: tentacle 4
+    400078: tentacle 5
+    400080: Tentaclearm
+    400082: Tentaclearm 1
+    400084: Tentaclearm 2
+    400086: Tentaclearm 3
+    400088: Tentaclearm 4
+    400090: Tentaclearm 5
+    400092: TopChand
+    400094: UpperBall
+    400096: UpperTentacle
+    400098: UpperTentacle1
+    400100: UpperTentacle2
+    400102: UpperTentacle3
+    400104: UpperTentacle4
+    400106: UpperTentacle5
+    400108: UpperTentacle1_Candle_MeshPart0
+    400110: UpperTentacle1_Candle_MeshPart1
+    2300000: Cage
+    2300002: Candle
+    2300004: Candle 1
+    2300006: Candle 2
+    2300008: Candle 3
+    2300010: Candle 4
+    2300012: Candle 5
+    2300014: CandleLower
+    2300016: CandleLower 1
+    2300018: CandleLower 2
+    2300020: CandleLower 3
+    2300022: CandleLower 4
+    2300024: CandleLower 5
+    2300026: polySurface47
+    2300028: Suckers
+    2300030: suckers
+    2300032: Suckers 1
+    2300034: suckers 1
+    2300036: Suckers 2
+    2300038: suckers 2
+    2300040: Suckers 3
+    2300042: suckers 3
+    2300044: Suckers 4
+    2300046: suckers 4
+    2300048: Suckers 5
+    2300050: suckers 5
+    2300052: tentacle
+    2300054: tentacle 1
+    2300056: tentacle 2
+    2300058: tentacle 3
+    2300060: tentacle 4
+    2300062: tentacle 5
+    2300064: Tentaclearm
+    2300066: Tentaclearm 1
+    2300068: Tentaclearm 2
+    2300070: Tentaclearm 3
+    2300072: Tentaclearm 4
+    2300074: Tentaclearm 5
+    2300076: TopChand
+    2300078: UpperBall
+    2300080: UpperTentacle1_Candle_MeshPart0
+    2300082: UpperTentacle1_Candle_MeshPart1
+    3300000: Cage
+    3300002: Candle
+    3300004: Candle 1
+    3300006: Candle 2
+    3300008: Candle 3
+    3300010: Candle 4
+    3300012: Candle 5
+    3300014: CandleLower
+    3300016: CandleLower 1
+    3300018: CandleLower 2
+    3300020: CandleLower 3
+    3300022: CandleLower 4
+    3300024: CandleLower 5
+    3300026: polySurface47
+    3300028: Suckers
+    3300030: suckers
+    3300032: Suckers 1
+    3300034: suckers 1
+    3300036: Suckers 2
+    3300038: suckers 2
+    3300040: Suckers 3
+    3300042: suckers 3
+    3300044: Suckers 4
+    3300046: suckers 4
+    3300048: Suckers 5
+    3300050: suckers 5
+    3300052: tentacle
+    3300054: tentacle 1
+    3300056: tentacle 2
+    3300058: tentacle 3
+    3300060: tentacle 4
+    3300062: tentacle 5
+    3300064: Tentaclearm
+    3300066: Tentaclearm 1
+    3300068: Tentaclearm 2
+    3300070: Tentaclearm 3
+    3300072: Tentaclearm 4
+    3300074: Tentaclearm 5
+    3300076: TopChand
+    3300078: UpperBall
+    3300080: UpperTentacle1_Candle_MeshPart0
+    3300082: UpperTentacle1_Candle_MeshPart1
+    4300000: Cage
+    4300002: UpperBall
+    4300004: TopChand
+    4300006: polySurface47
+    4300008: Tentaclearm
+    4300010: Suckers
+    4300012: Candle
+    4300014: tentacle
+    4300016: suckers
+    4300018: CandleLower
+    4300020: tentacle
+    4300022: suckers
+    4300024: CandleLower
+    4300026: tentacle
+    4300028: suckers
+    4300030: CandleLower
+    4300032: tentacle
+    4300034: suckers
+    4300036: CandleLower
+    4300038: tentacle
+    4300040: suckers
+    4300042: CandleLower
+    4300044: tentacle
+    4300046: suckers
+    4300048: CandleLower
+    4300050: Tentaclearm
+    4300052: Suckers
+    4300054: Candle
+    4300056: Tentaclearm
+    4300058: Suckers
+    4300060: Candle
+    4300062: Tentaclearm
+    4300064: Suckers
+    4300066: Candle
+    4300068: Tentaclearm
+    4300070: Suckers
+    4300072: Candle
+    4300074: Tentaclearm
+    4300076: Suckers
+    4300078: Candle
+    4300080: UpperTentacle1_Candle_MeshPart0
+    4300082: UpperTentacle1_Candle_MeshPart1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
